@@ -8,6 +8,19 @@ body {
     width: 100%;
 }
 
+.content {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+}
+
 #navbar-container {
     position: fixed;
     top: 0;
@@ -157,6 +170,7 @@ body {
 
 .about-text {
     width: 50%;
+    transition-delay: 300ms;
 }
 
 .projects-container {
@@ -312,6 +326,7 @@ textarea {
 
     .about-text {
         width: 100%;
+        padding: 0 30px;
     }
 
     .about-social-media {
